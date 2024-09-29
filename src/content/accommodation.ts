@@ -11,10 +11,10 @@ import SquirrelInn from "../assets/accommodation/squirrel-inn.webp";
 export const accommodation = [
 	{
 		name: "The Inn on the Lake",
-		travel: "6",
+		travel: 6,
 		location: "Godalming",
 		price: "££",
-		image: "/assets/accommodation/inn-on-the-lake.jpg",
+		image: InnOnTheLake,
 	},
 	{
 		name: "Merry Harriers",

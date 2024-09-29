@@ -10,7 +10,7 @@ const { pathname } = Astro.url;
 const isActive =
 	href === "/wedding"
 		? pathname === "/wedding" || pathname === "/wedding/"
-		: pathname.endsWith(href) || pathname.startsWith(href);
+		: pathname.endsWith(String(href)) || pathname.startsWith(String(href));
 
 // Remove the console.log statement
 ---

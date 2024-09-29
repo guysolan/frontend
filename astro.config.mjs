@@ -10,4 +10,9 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap(), tailwind()],
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/sharp'
+    }
+  }
 });

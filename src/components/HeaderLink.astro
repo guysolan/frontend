@@ -6,7 +6,13 @@ type Props = HTMLAttributes<"a">;
 const { href, class: className, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
-const isActive = pathname === href;
+// Update the isActive logic to handle the /wedding path correctly
+const isActive =
+	href === "/wedding"
+		? pathname === "/wedding" || pathname === "/wedding/"
+		: pathname.endsWith(href) || pathname.startsWith(href);
+
+// Remove the console.log statement
 ---
 
 <a

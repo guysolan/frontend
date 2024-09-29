@@ -1,6 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
-
+import { defineConfig, passthroughImageService } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
 // Remove the Vercel serverless import
@@ -11,4 +10,7 @@ export default defineConfig({
 	output: "static", // Change this from "server" to "static"
 	site: "https://guysolan.github.io",
 	base: "my-repo",
+	image: {
+		service: passthroughImageService(),
+	},
 });

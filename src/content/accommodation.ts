@@ -14,14 +14,18 @@ export const accommodation = [
 		travel: 6,
 		location: "Godalming",
 		price: "££",
+		link: "https://www.theinnonthelake.co.uk/",
 		image: InnOnTheLake,
+		cost: 110,
 	},
 	{
 		name: "Merry Harriers",
 		travel: 9,
 		location: "Hambledon",
-		price: "££",
+		price: "£££",
 		image: MerryHarriers,
+		link: "https://merryharriers.com/",
+		cost: 125,
 	},
 	{
 		name: "Barnett Hotel",
@@ -30,6 +34,7 @@ export const accommodation = [
 		location: "Guildford",
 		price: "£££",
 		image: BarnettHotel,
+		cost: 140,
 	},
 	{
 		name: "The Lythe Hotel",
@@ -38,14 +43,16 @@ export const accommodation = [
 		location: "Haslemere",
 		price: "£££",
 		image: LytheHotel,
+		cost: 120,
 	},
 	{
 		name: "Crown Inn",
-		link: "https://www.crowninnhaslemere.co.uk/",
+		link: "https://thecrownchiddingfold.com/",
 		travel: 15,
 		location: "Chiddingfold",
-		price: "££",
+		price: "£££",
 		image: CrownInn,
+		cost: 145,
 	},
 	{
 		name: "Rose and Crown",
@@ -54,6 +61,7 @@ export const accommodation = [
 		location: "Godalming",
 		price: "££",
 		image: RoseAndCrown,
+		cost: 100,
 	},
 	{
 		name: "The Swan",
@@ -62,14 +70,16 @@ export const accommodation = [
 		location: "Chiddingfold",
 		price: "££",
 		image: TheSwan,
+		cost: 100,
 	},
 	{
 		name: "The Mulberry",
-		link: "https://www.themulberryhotel.co.uk/",
+		link: "https://themulberryinn.co.uk/",
 		travel: 18,
 		location: "Haslemere",
 		price: "££",
 		image: TheMulberry,
+		cost: 100,
 	},
 	{
 		name: "Squirrel Inn",
@@ -78,5 +88,6 @@ export const accommodation = [
 		location: "Hurtmore",
 		price: "££",
 		image: SquirrelInn,
-	}
+		cost: 100,
+	},
 ];

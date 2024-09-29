@@ -6,7 +6,7 @@ type Props = HTMLAttributes<"a">;
 const { href, class: className, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
-const isActive = pathname.endsWith(href as string);
+const isActive = pathname === href;
 ---
 
 <a

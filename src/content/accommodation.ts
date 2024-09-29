@@ -56,7 +56,7 @@ export const accommodation = [
 	},
 	{
 		name: "Rose and Crown",
-		link: "https://www.roseandcrownhaslemere.co.uk/",
+		link: "https://www.roseandcrownbar.co.uk/rooms/",
 		travel: 7,
 		location: "Godalming",
 		price: "££",
@@ -65,7 +65,7 @@ export const accommodation = [
 	},
 	{
 		name: "The Swan",
-		link: "https://www.theswanhaslemere.co.uk/",
+		link: "https://www.theswaninnchiddingfold.com/",
 		travel: 15,
 		location: "Chiddingfold",
 		price: "££",

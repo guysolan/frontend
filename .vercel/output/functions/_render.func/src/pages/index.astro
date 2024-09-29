@@ -1,0 +1,44 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { Image } from "astro:assets";
+import PosingOutside from "../assets/wedding/posing-outside.png";
+import WinningWithText from "../assets/wedding/winning-with-text.png";
+console.log(Astro.url.searchParams);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main class="max-w-[800px] mx-auto space-y-8 lg:space-y-16">
+			<div class="px-2 space-y-2 lg:space-y-4 text-center">
+				<p class="text-3xl md:text-4xl lg:text-5xl text-zinc-900">
+					Time for a<br /> Wedding Party
+				</p>
+				<p class="text-lg md:text-xl lg:text-2xl text-zinc-600">
+					We’re getting married (again) and<br /> would love for you to
+					be there
+				</p>
+			</div>
+			<div class="relative text-white p-4">
+				<Image
+					class="hidden w-full h-full object-fill"
+					src={PosingOutside}
+					alt="Wedding Cover"
+				/>
+				<Image
+					class="rounded-md shadow-sm"
+					src={WinningWithText}
+					alt="Wedding Cover"
+				/>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

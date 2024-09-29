@@ -8,6 +8,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://guy-amelia-solan.com",
-  integrations: [mdx(), sitemap(), tailwind()]
+  site: "https://guysolan.github.io",
+  base: "/frontend/",
+  integrations: [mdx(), sitemap(), tailwind()],
 });

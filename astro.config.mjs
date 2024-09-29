@@ -15,4 +15,14 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind()],
   output: "server",
   adapter: vercel(),
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/sharp'
+    }
+  },
+  vite: {
+    ssr: {
+      noExternal: ['@astrojs/vercel/serverless']
+    }
+  }
 });

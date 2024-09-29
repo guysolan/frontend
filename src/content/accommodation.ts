@@ -14,7 +14,7 @@ export const accommodation = [
 		travel: 6,
 		location: "Godalming",
 		price: "££",
-		image: () => import("../assets/accommodation/inn-on-the-lake.jpg"),
+		image: InnOnTheLake,
 	},
 	{
 		name: "Merry Harriers",

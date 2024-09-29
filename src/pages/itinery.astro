@@ -1,0 +1,66 @@
+---
+import { accommodation } from "../content/accommodation.ts";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts.ts";
+import { Image } from "astro:assets";
+import FamilyHugs from "../assets/wedding/family-hugs.jpeg";
+import Posing from "../assets/wedding/posing-landscape.jpeg";
+import Celebrating from "../assets/wedding/posing.jpg";
+console.log(Astro.url.searchParams);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main class="max-w-[800px] mx-auto">
+			<div class="p-4 space-y-4 lg:space-y-8">
+				<section
+					class="bg-beige p-6 mx-auto flex flex-col border border-zinc-400 rounded-lg shadow-md"
+				>
+					<h2 class="text-2xl font-semibold mb-2">Family Party</h2>
+					<h3 class="text-lg text-zinc-600 mb-4">
+						05 September 2025
+					</h3>
+					<p class="text-zinc-800 mb-6 text-lg">
+						We are having a family party the day before the wedding.
+						Please come and join us for a BBQ and drinks.
+					</p>
+					<Image
+						src={FamilyHugs}
+						alt="Family Hugs"
+						class="rounded-md shadow-sm"
+					/>
+				</section>
+
+				<section
+					class="bg-beige p-6 mx-auto flex flex-col border border-zinc-600 rounded-lg shadow-md"
+				>
+					<h2 class="text-2xl font-semibold mb-2">Wedding Day</h2>
+					<h3 class="text-lg text-zinc-600 mb-4">
+						06 September 2025
+					</h3>
+					<p class="text-zinc-800 mb-6 text-lg">
+						Come from 1pm for the ceremony at 2pm.
+					</p>
+					<Image
+						src={Celebrating}
+						alt="Celebrating"
+						class="rounded-md shadow-sm"
+					/>
+				</section>
+			</div>
+			<h4
+				class="text-zinc-800 w-full text-center p-8 mb-8 max-w-[600px] text-xl lg:text-2xl mx-auto font-semibold"
+			>
+				More information will be added later once we figure things out!
+			</h4>
+		</main>
+		<Footer />
+	</body>
+</html>

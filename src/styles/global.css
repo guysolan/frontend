@@ -28,14 +28,14 @@ body {
 /* Add media query for medium-width screens */
 @media (min-width: 768px) and (max-width: 1023px) {
 	body {
-		background-image: url('/double-wobble-long.svg');
+		background-image: url('/wedding/big-wobble-long.svg');
 	}
 }
 
 /* Add media query for large screens */
 @media (min-width: 1024px) {
 	body {
-		background-image: url('/double-wobble-long.svg');
+		background-image: url('/wedding/big-wobble-long.svg');
 	}
 }
 

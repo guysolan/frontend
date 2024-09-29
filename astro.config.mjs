@@ -3,10 +3,12 @@ import { defineConfig } from "astro/config";
 
 import tailwind from "@astrojs/tailwind";
 
-import vercel from "@astrojs/vercel/serverless";
+// Remove the Vercel serverless import
+// import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
 	integrations: [tailwind()],
-	output: "server",
-	adapter: vercel(),
+	output: "static", // Change this from "server" to "static"
+	site: "https://guysolan.github.io",
+	base: "my-repo",
 });

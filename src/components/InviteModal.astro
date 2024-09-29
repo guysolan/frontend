@@ -4,9 +4,12 @@
 
 <dialog class="border border-zinc-800 p-4">
     <p>Dear <span id="names"></span></p>
-    <p>You are invited to Guy and Amelia's Wedding Party on 6th September 2025.</p>
-    <button class="border border-zinc-800 px-2 py-1 bg-zinc-100" autofocus>See the Details</button>
-
+    <p>
+        You are invited to Guy and Amelia's Wedding Party on 6th September 2025.
+    </p>
+    <button class="border border-zinc-800 px-2 py-1 bg-zinc-100" autofocus
+        >See the Details</button
+    >
 </dialog>
 <button class="flex gap-2 items-center justify-center"
     ><span class="">Show Invite</span>
@@ -79,22 +82,21 @@
     const closeButton = document.querySelector("dialog button");
 
     // "Show the dialog" button opens the dialog modally
-    showButton.addEventListener("click", () => {
-        dialog.showModal();
+    showButton?.addEventListener("click", () => {
+        dialog?.showModal();
     });
 
     // "Close" button closes the dialog
-    closeButton.addEventListener("click", () => {
-        dialog.close();
+    closeButton?.addEventListener("click", () => {
+        dialog?.close();
     });
 
-	const urlSearchParams = new URLSearchParams(window.location.search);
-	const params = Object.fromEntries(urlSearchParams.entries());
-	console.log(params);
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    console.log(params);
 
-	const names = document.getElementById("names");
-	if (params.names) {
-		names.textContent = params.names;
-	}
+    const names = document.getElementById("names");
+    if (names !== null) {
+        names.textContent = params.names;
+    }
 </script>
-

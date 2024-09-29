@@ -4,8 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { Image } from "astro:assets";
-import PosingOutside from "../assets/wedding/posing-outside.png";
-import WinningWithText from "../assets/wedding/winning-with-text.png";
+import WoopingWithWords from "../assets/wedding/wooping-with-words.png";
 console.log(Astro.url.searchParams);
 ---
 
@@ -32,20 +31,15 @@ console.log(Astro.url.searchParams);
 			</div>
 			<div class="relative text-white p-4">
 				<Image
-					class="hidden w-full h-full object-fill"
-					src={PosingOutside}
-					alt="Wedding Cover"
-				/>
-				<Image
 					class="rounded-md shadow-sm"
-					src={WinningWithText}
+					src={WoopingWithWords}
 					alt="Wedding Cover"
 				/>
 			</div>
 			<h4
 				class="text-zinc-800 w-full text-center pb-16 max-w-[600px] text-xl lg:text-2xl mx-auto font-semibold"
 			>
-				Please RSVP by <span class="underline">November 1st, 2024</span>
+				Please RSVP by <span class="underline">December 1st, 2024</span>
 			</h4>
 		</main>
 		<Footer />

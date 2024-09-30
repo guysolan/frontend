@@ -36,13 +36,17 @@ console.log(Astro.url.searchParams);
 					alt="Wedding Cover"
 				/>
 			</div>
+			<div class="pb-16 space-y-4">
 			<h4
-				class="text-zinc-800 w-full text-center pb-16 max-w-[600px] text-xl lg:text-2xl mx-auto font-semibold"
+				class="text-zinc-800 w-full text-center max-w-[600px] text-xl lg:text-2xl mx-auto font-semibold"
 			>
 				Please RSVP by <span class="underline">December 1st, 2024</span>
 			</h4>
-			<p>Guy: +44 7561 788783</p>
-			<p>Amelia: +46 70-769 98 66</p>
+			<div class="flex flex-col items-center justify-center space-y-2 text-zinc-700">
+				<p class="text-lg"><span class="font-semibold">Guy:</span> +44 7561 788783</p>
+				<p class="text-lg"><span class="font-semibold">Amelia:</span> +46 70-769 98 66</p>
+			</div>
+			</div>
 		</main>
 		<Footer />
 	</body>

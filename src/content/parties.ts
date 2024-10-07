@@ -14,7 +14,7 @@ export const parties: Party[] = [
 		title: "Family Party",
 		date: "05 September 2025",
 		description:
-			"We are having a family party the day before the wedding. Please come and join us for a BBQ and drinks.",
+			"We are having a party for family only the day before the wedding. Please come and join us for a BBQ and drinks.",
 		image: FamilyHugs,
 		imageAlt: "Family Hugs",
 	},
